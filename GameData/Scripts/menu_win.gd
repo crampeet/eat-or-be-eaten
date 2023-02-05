@@ -1,5 +1,7 @@
 extends Control
 
+func _ready():
+	$AudioWin.play()
 
 func _on_Back_to_Menu_Button_pressed():
 	$AudioClick.play()

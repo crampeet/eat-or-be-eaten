@@ -50,9 +50,10 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Who is Chicken Now"
+config/name="Roots of the Raptor"
+config/description="2D platformer where the player uses reverse evolution to find their genetic roots and thwart a fast food plot."
 run/main_scene="res://Scenes/start.tscn"
-boot_splash/image="res://Assets/backgrounds/farm_background1_png.png"
+boot_splash/image="res://Assets/backgrounds/load_screen.png"
 config/icon="res://Assets/chicken/CHICKEN_Stand.png"
 
 [gui]
