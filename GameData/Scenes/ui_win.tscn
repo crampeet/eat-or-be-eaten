@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/DarkTheme/Dark.theme" type="Theme" id=1]
+[ext_resource path="res://Scripts/menu_win.gd" type="Script" id=2]
+[ext_resource path="res://Assets/sounds/Hop.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/sounds/Peck.wav" type="AudioStream" id=4]
+
+[node name="Win Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 244.0
+margin_top = 92.0
+margin_right = 805.0
+margin_bottom = 155.0
+theme = ExtResource( 1 )
+text = "
+  Success!  You found your evolutionary roots and saved your fellow chickens!"
+scroll_active = false
+
+[node name="Back to Menu Button" type="Button" parent="."]
+margin_left = 447.0
+margin_top = 227.0
+margin_right = 617.0
+margin_bottom = 292.0
+theme = ExtResource( 1 )
+text = "Back to Menu"
+
+[node name="Quit Button" type="Button" parent="."]
+margin_left = 447.0
+margin_top = 322.0
+margin_right = 617.0
+margin_bottom = 387.0
+theme = ExtResource( 1 )
+text = "Exit Game"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 250.0
+margin_top = 442.0
+margin_right = 697.0
+margin_bottom = 563.0
+theme = ExtResource( 1 )
+text = "
+  Thanks to Global Game Jam 2023 and Buffalo Game Space! 
+
+  Dev Team: 
+  Emily, Jayson, Josh, Max, Nicholas, and Paul"
+scroll_active = false
+
+[node name="AudioClick" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+
+[node name="AudioQuit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+
+[connection signal="pressed" from="Back to Menu Button" to="." method="_on_Back_to_Menu_Button_pressed"]
+[connection signal="pressed" from="Quit Button" to="." method="_on_Quit_Button_pressed"]

@@ -4,13 +4,6 @@ extends PlayerState
 
 class_name PlayerStateRun
 
-var jump_speed = -200
-var raptor_jump_speed = -400
-var move_speed = Vector2(150, 0)
-var raptor_move_speed = Vector2(200, 0)
-var min_move_speed = 0.005
-var friction = 0.32
-
 func _ready():
 	if persistent_state.devolved:
 		animated_sprite.play("raptor_run")

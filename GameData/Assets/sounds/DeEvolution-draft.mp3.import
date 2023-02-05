@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DeEvolution-draft.mp3-effd2ac2ec25e0f05c73e89bed93cab5.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/DeEvolution-draft.mp3"
+dest_files=[ "res://.import/DeEvolution-draft.mp3-effd2ac2ec25e0f05c73e89bed93cab5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

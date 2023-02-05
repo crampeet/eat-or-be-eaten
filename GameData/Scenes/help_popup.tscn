@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/DarkTheme/Dark.theme" type="Theme" id=1]
+
+[node name="Instructions Dialog" type="AcceptDialog"]
+margin_right = 83.0
+margin_bottom = 58.0
+theme = ExtResource( 1 )
+resizable = true
+dialog_text = "Play as the inimitable Peck Star, who discovers 
+Kernel Zaxby \"Bojangles\" Sanders' wicked plot to 
+devolve and catch all your friends for food.  
+Follow your bird instincts and find your roots to 
+stop the Kernel! 
+
+Move with Arrow Keys 
+Jump with Space Bar
+Find Secret Spices to Devolve!"
+__meta__ = {
+"_editor_description_": "Game overview popup"
+}

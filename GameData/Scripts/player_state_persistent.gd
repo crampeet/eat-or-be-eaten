@@ -42,11 +42,6 @@ func change_state(new_state_name):
 	state.name = "current_state"
 	add_child(state)
 
-func _on_VisibilityNotifier2D_viewport_exited(_viewport):
-	if velocity.x < 0:
-		print("Player loses: did not stay in devolving zone")
-		# TODO: show lose game screen
-
 func _on_DevolveArea1_body_entered(body):
 	if body.name == "player":
 		print("Form of Raptor!")

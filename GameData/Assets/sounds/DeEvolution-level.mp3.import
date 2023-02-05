@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DeEvolution-level.mp3-6ffc0a24ce3164bd4cccdb51f69a0e1c.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/DeEvolution-level.mp3"
+dest_files=[ "res://.import/DeEvolution-level.mp3-6ffc0a24ce3164bd4cccdb51f69a0e1c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

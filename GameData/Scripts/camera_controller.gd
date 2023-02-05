@@ -1,14 +1,13 @@
-extends Camera2D
+extends Node
 
-var speed : int = 80
-var wincount = 0
+var player
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$AudioMusic.play()
+	player = get_node("../player")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position.x += speed * delta
-
-func _on_WinArea_body_entered(body):
-	wincount += 1
-	if wincount > 1:
-		print("You Win!")
-		# TODO: show win screen
+	self.position.y = 0
+	self.position.x = clamp(player.position.x, 0, 5500)
