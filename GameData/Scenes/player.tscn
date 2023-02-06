@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://Assets/chicken/CHICKEN_Run_1.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/player_state_persistent.gd" type="Script" id=2]
@@ -9,6 +9,21 @@
 [ext_resource path="res://Assets/raptor/Raptor_1.png" type="Texture" id=7]
 [ext_resource path="res://Assets/raptor/Raptor_2.png" type="Texture" id=8]
 [ext_resource path="res://Assets/raptor/Raptor_4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/transform/Transform_2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/transform/Transform_3.png" type="Texture" id=11]
+[ext_resource path="res://Assets/transform/Transform_4.png" type="Texture" id=12]
+[ext_resource path="res://Assets/transform/Transform_9.png" type="Texture" id=13]
+[ext_resource path="res://Assets/transform/Transform_8.png" type="Texture" id=14]
+[ext_resource path="res://Assets/transform/Transform_1.png" type="Texture" id=15]
+[ext_resource path="res://Assets/transform/Transform_5.png" type="Texture" id=16]
+[ext_resource path="res://Assets/transform/Transform_6.png" type="Texture" id=17]
+[ext_resource path="res://Assets/transform/Transform_7.png" type="Texture" id=18]
+[ext_resource path="res://Assets/transform/Transform_10.png" type="Texture" id=19]
+[ext_resource path="res://Assets/transform/Transform_11.png" type="Texture" id=20]
+[ext_resource path="res://Assets/transform/Transform_13.png" type="Texture" id=21]
+[ext_resource path="res://Assets/transform/Transform_14.png" type="Texture" id=22]
+[ext_resource path="res://Assets/transform/Transform_15.png" type="Texture" id=23]
+[ext_resource path="res://Assets/transform/Transform_12.png" type="Texture" id=24]
 
 [sub_resource type="AtlasTexture" id=5]
 flags = 4
@@ -60,6 +75,81 @@ flags = 4
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 32, 32 )
 
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 19 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 20 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 24 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 21 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 128, 64 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 128, 64 )
+
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [  ],
@@ -96,6 +186,11 @@ animations = [ {
 "loop": true,
 "name": "run",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"loop": false,
+"name": "transform",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -106,7 +201,8 @@ script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 4 )
-animation = "raptor_idle"
+animation = "transform"
+frame = 14
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -49,3 +49,4 @@ func _on_DevolveArea1_body_entered(body):
 		devolved = true
 		$CollisionShape2D.scale.x = 2
 		$CollisionShape2D.scale.y = 2
+		$AnimatedSprite.play("transform")

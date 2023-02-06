@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/sounds/Peck.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scenes/help_popup.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/sounds/Hop.wav" type="AudioStream" id=5]
-[ext_resource path="res://Assets/sounds/DeEvolution-Title.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Assets/sounds/DeEvolution-Title (1).mp3" type="AudioStream" id=6]
 
 [node name="Start Menu" type="Control"]
 anchor_right = 1.0
@@ -48,9 +48,11 @@ text = "
 scroll_active = false
 
 [node name="AudioClick" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 500, 0 )
 stream = ExtResource( 3 )
 
 [node name="AudioQuit" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 500, 0 )
 stream = ExtResource( 5 )
 
 [node name="AudioTitleMusic" type="AudioStreamPlayer2D" parent="."]
